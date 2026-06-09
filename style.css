@@ -12,17 +12,25 @@ body {
   text-align: center;
 }
 
-.review-panel {
-  background-color: #090040;
-  padding: 5px;
-  width: 500px;
-  border-radius: 10px;
+.panel-title {
+  color: white;
 }
 
-.review-panel h3 {
-  color: #471396;
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250p, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.review-panel p {
-  color: #B13BFF;
+.content-panel {
+  background-color: #1a1a5c;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.content-panel:hover {
+  transform: scale(1.01);
 }
