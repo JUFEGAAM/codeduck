@@ -3,12 +3,12 @@ body {
 }
 
 #main {
-  color: khaki;
+  color: white;
   text-align: center;
 }
 
 #reviews-main {
-  color: khaki;
+  color: white;
   text-align: center;
 }
 
@@ -18,19 +18,27 @@ body {
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250p, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   padding: 20px;
 }
 
 .content-panel {
-  background-color: #1a1a5c;
-  border-radius: 15px;
+  background-color: #222222;
+  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-panel:hover {
   transform: scale(1.01);
+}
+
+.panel-cover {
+  width: 100%;
+  height: 80%;
+  margin: auto;
 }
