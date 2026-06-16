@@ -1,10 +1,33 @@
 body {
   background-color: black;
+  font-family: "Aldrich", sans-serif;
 }
 
 #main {
   color: white;
-  text-align: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 12vh;
+  box-sizing: border-box;
+}
+
+#review-button {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 15px 30px;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#review-button:hover {
+  background-color: khaki;
+  transform: scale(1.05); /* Efecto de que el botón se acerca a ti */
 }
 
 #reviews-title {
@@ -32,6 +55,8 @@ body {
   aspect-ratio: 3 / 4;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  text-align: center;
 }
 
 .content-panel:hover {
