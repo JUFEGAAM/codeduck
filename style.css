@@ -27,7 +27,7 @@ body {
 
 #review-button:hover {
   background-color: khaki;
-  transform: scale(1.05); /* Efecto de que el botón se acerca a ti */
+  transform: scale(1.05);
 }
 
 #reviews-title {
